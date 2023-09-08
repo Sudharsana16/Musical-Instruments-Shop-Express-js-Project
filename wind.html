@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style type="text/css">
+    *
+      {
+        margin: 0px;
+        padding: 0px;
+        box-sizing:border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    .navbar 
+    {
+    display: flex;
+    justify-content: space-between;
+    background-color:black;
+    position:sticky;
+    top:0px;
+    z-index:1;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav>ul {
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+
+}
+
+.nav>ul>li>a 
+{
+    display: block;
+    padding: 30px 14px;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color:orange;
+    font-size: 1.1rem;
+    font-weight:bold;
+}
+.logo {
+    height: 50px;
+    width: 140px;
+    padding: 20px;
+}
+
+.logo>img {
+    height: 400%;
+    width: 150%;
+}
+      h2{
+        color: brown;
+        text-align: center;
+      }
+    .content
+    {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background-color: peachpuff;
+    }
+    .card
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 250px;
+      height: 450px;
+      border: 1px solid black;
+      margin: 20px;
+      padding:20px;
+      font-family: 'Raleway' , sans-serif;
+      font-weight: bold;
+      box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;transition:1s;
+      transform: scale(1);
+    }
+    .card:hover
+    {
+      transform:scale(1.05);
+      cursor:pointer;
+    }
+    .card>button
+    {
+      width: 60%;
+      height:30px;
+      padding: 0px;
+      border-radius: 5px;
+      background-color:orange;
+      border: none;
+      font-family: 'josefin sans', sans-serif;
+      font-size: 1rem;
+      transform: scale(1);
+    }
+    .card>button:hover
+    {
+      transform:scale(1.05);
+      cursor:pointer;
+    }
+
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav">
+      <a href="#" class="logo"><img src="https://www.devmusicalindia.in/assets_c/logos/devMusical-210x50.png"></a>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">Guitars & bass</a></li>
+            <li><a href="/drums">Drums & Percussion</a></li>
+            <li><a href="/piano">Piano & Keyboard</a></li>
+            <li><a href="/wind">Wind Instruments</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </div>
+</nav>  
+<br>
+    <h2>Wind Instruments Collections</h2>
+
+    <div class="content">
+        <div class="card">
+          <img src="https://www.samash.com/media/catalog/product/b/a/bapktr50x_back.jpg?width=265&height=265&canvas=265,265&optimize=medium&bg-color=255,255,255&fit=bounds" class="card-img-top" alt="...">
+          <span> Benjamin Adams BAPKTR50X Pocket Trumpet Outfit</span>
+          <span>Rs.2000</span>
+          <button>Buy Now</button>
+        </div>
+              <div class="card">
+                <img src="https://www.samash.com/media/catalog/product/s/a/sab190xxxx_5.jpg?width=265&height=265&canvas=265,265&optimize=medium&bg-color=255,255,255&fit=bounds" class="card-img-top" alt="...">
+                <span>Bach AB190 Artisan Series Stradivarius Trumpet</span>
+                  <span>Rs.2,500</span>
+                  <button>Buy Now</button>
+                </div>
+              <div class="card">
+                <img src="https://www.samash.com/media/catalog/product/s/f/sfl711xxx-p.jpg?width=265&height=265&canvas=265,265&optimize=medium&bg-color=255,255,255&fit=bounds" class="card-img-top" alt="...">
+                  <span>Selmer Prelude FL711 Student Flute</span>
+                  <span>Rs.1000</span>
+                  <button>Buy Now</button>
+                </div>
+              <div class="card">
+                <img src="https://www.samash.com/media/catalog/product/r/a/rae30xxxx-p.jpg?width=265&height=265&canvas=265,265&optimize=medium&bg-color=255,255,255&fit=bounds" class="card-img-top" alt="...">
+                  <span>Roland Aerophone Pro AE-30 Digital Wind Instrument</span>
+                  <span>Rs.750</span>
+                  <button>Buy Now</button>
+              </div>
+              <div class="card">
+                <img src="https://www.samash.com/media/catalog/product/b/r/br13_4.jpg?width=265&height=265&canvas=265,265&optimize=medium&bg-color=255,255,255&fit=bounds" class="card-img-top" alt="...">
+                  <span>Buffet Crampon R13 Clarinet</span>
+                  <span>Rs.2500</span>
+                  <button>Buy Now</button>
+                </div>
+              <div class="card">
+                <img src="https://www.samash.com/media/catalog/product/j/a/jas700xxx-p.jpg?width=265&height=265&canvas=265,265&optimize=medium&bg-color=255,255,255&fit=bounds" class="card-img-top" alt="...">
+                  <span>Jupiter JAS700 Alto Saxophone Outfit (Used Mint Condition)</span>
+                  <span>Rs.999</span>
+                  <button>Buy Now</button>
+                </div>
+              <div class="card">
+                <img src="https://www.samash.com/media/catalog/product/h/t/htr160xxx-p.jpg?width=265&height=265&canvas=265,265&optimize=medium&bg-color=255,255,255&fit=bounds" class="card-img-top" alt="...">
+                  <span>Holton TR160 Professional Tenor Trombone with F Attachment</span>
+                  <span>Rs.899</span>
+                  <button>Buy Now</button>
+                  </div>
+              <div class="card">
+                <img src="https://www.samash.com/media/catalog/product/g/4/g4w-p.jpg?width=265&height=265&canvas=265,265&optimize=medium&bg-color=255,255,255&fit=bounds" class="card-img-top" alt="...">
+                  <span>Gemeinhardt 4W Wood Piccolo</span>
+                  <span>Rs.699</span>
+                  <button>Buy Now</button>
+                </div>
+              </div>
+</body>
+</html>
